@@ -1,3 +1,5 @@
+# check out https://www.gitpod.io/docs/references/gitpod-yml for more info
+
 tasks:
   - init: npm install
     command: | 
@@ -7,3 +9,11 @@ tasks:
 ports:
   - port: 3000
     onOpen: open-browser 
+vscode:
+  extensions:
+    - svelte.svelte-vscode
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
